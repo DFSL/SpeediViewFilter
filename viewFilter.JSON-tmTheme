@@ -1,0 +1,95 @@
+{
+    "author": "DFSL", 
+    "name": "View Filter Colors", 
+    "settings": [
+        {
+            "settings": {
+                "background": "#CCCCCC", 
+                "caret": "#000000", 
+                "foreground": "#000000", 
+                "invisibles": "#BFBFBF", 
+                "lineHighlight": "#00000012", 
+                "selection": "#BAD6FD"
+            }
+        }, 
+        {
+            "name": "Comment", 
+            "scope": "comment", 
+            "settings": {
+                "foreground": "#00942A"
+            }
+        }, 
+        {
+            "name": "String", 
+            "scope": "string", 
+            "settings": {
+                "foreground": "#FFFF00"
+            }
+        }, 
+        {
+            "name": "Number", 
+            "scope": "constant.numeric", 
+            "settings": {
+                "foreground": "#A17AFF"
+            }
+        }, 
+        {
+            "name": "Element", 
+            "scope": "element.viewFilter", 
+            "settings": {
+                "foreground": "#0071BC"
+            }
+        },
+        {
+            "name": "Part", 
+            "scope": "part.viewFilter", 
+            "settings": {
+                "foreground": "#ED1C24"
+            }
+        },
+        {
+            "name": "Attribute Name", 
+            "scope": "attribute.name.viewFilter", 
+            "settings": {
+                "foreground": "#93278F"
+            }
+        },
+        {
+            "name": "Attribute Type", 
+            "scope": "attribute.type.viewFilter", 
+            "settings": {
+                "foreground": "#93278F"
+            }
+        },
+        {
+            "name": "Attribute Value", 
+            "scope": "attribute.value.viewFilter", 
+            "settings": {
+                "foreground": "#00A99D"
+            }
+        },
+        {
+            "name": "Attribute", 
+            "scope": "attribute.viewFilter", 
+            "settings": {
+                "foreground": "#000000"
+            }
+        },
+        {
+            "name": "Displayoption", 
+            "scope": "displayoption.viewFilter", 
+            "settings": {
+                "foreground": "#FF0000"
+            }
+        },
+        {
+            "name": "Include and ifdef", 
+            "scope": "keyword.viewFilter", 
+            "settings": {
+                "foreground": "#B4FF7F"
+            }
+        }
+
+    ], 
+    "uuid": "DDC0CBE1-442B-4CB5-80E4-26E4CFB3A277"
+}

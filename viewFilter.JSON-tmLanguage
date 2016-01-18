@@ -1,0 +1,93 @@
+{
+    "fileTypes": [
+        "vdf"
+    ], 
+    "name": "View Filter File", 
+    "patterns": [
+        {
+            "match": "(?i)^\\s*include\\s*<[/\u00e4\u00f6\u00fca-z\\-_.\\\\0-9]+>", 
+            "name": "keyword.viewFilter"
+        }, 
+        {
+            "match": "#.*", 
+            "name": "comment.line.number-sign.viewFilter"
+        }, 
+        {
+            "match": "[\\+\\-0-9.]+", 
+            "name": "constant.numeric.viewFilter"
+        }, 
+        {
+            "match": "\\boff\\b", 
+            "name": "constant.numeric.viewFilter"
+        }, 
+        {
+            "match": "(?i)'[a-z0-9\\-_/\u00e4\u00f6\u00fc.:=\\+. ]+'", 
+            "name": "string.quoted.single.viewFilter"
+        }, 
+        {
+            "match": "^\\s*(?=B)", 
+            "name": "element.viewFilter"
+        }, 
+        {
+            "captures": {
+                "2": {
+                    "name": "part.viewFilter"
+                }
+            }, 
+            "match": "(?i)^\\s*(BEAM|CEILING|COLUMN|COMPONENT|DIM|DTM|ELEMENT|FILE|FLOOR|GLOBAL|GRID|LABEL|PERFORATOR|REFPLANE|ROOF|ROOF_CON|SECTION|SLAB|SOLID|SPACE|STAIR|WALL|UNITS)\\s+([a-zA-Z_0-9]*\\b)", 
+            "name": "element.viewFilter"
+        }, 
+        {
+            "begin": "(\\()", 
+            "beginCaptures": {
+                "1": {
+                    "name": "keyword.operator.viewFilter"
+                }
+            }, 
+            "end": "(\\))", 
+            "endCaptures": {
+                "1": {
+                    "name": "keyword.operator.viewFilter"
+                }
+            }, 
+            "name": "attribute.viewFilter", 
+            "patterns": [
+                {
+                    "match": "(?i)[a-z_\u00f6\u00e4\u00fc]*", 
+                    "name": "attribute.name.viewFilter"
+                }, 
+                {
+                    "match": "\\b(i|r|u|t)\\b", 
+                    "name": "attribute.type.viewFilter"
+                }, 
+                {
+                    "match": "(?i)'[a-z0-9_/\u00e4\u00f6\u00fc ]+'", 
+                    "name": "attribute.value.viewFilter"
+                }, 
+                {
+                    "match": "\\b[0-9]+\\b", 
+                    "name": "attribute.value.viewFilter"
+                }, 
+                {
+                    "begin": "(\\[|\\{)", 
+                    "end": "(\\]|\\})", 
+                    "name": "attribute.value.viewFilter"
+                }
+            ]
+        }, 
+        {
+            "match": "\\b(i|r|u|t)\\b", 
+            "name": "attribute.type.viewFilter"
+        }, 
+        {
+            "match": "\\b(drw|sym|xha|txt|mat)\\b", 
+            "name": "displayoption.viewFilter"
+        }, 
+        {
+            "match": "\\b(ifdef|else|endif)\\b", 
+            "name": "keyword.viewFilter"
+        }
+    ], 
+    "scopeName": "source.viewFilter.speedikon", 
+    "uuid": "2c2d866d-8c11-4b62-b5e2-5c2ba0966313"
+}
